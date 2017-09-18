@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>My blog</title>
+    <link rel="stylesheet" href="./style.css">
+    <style type="text/css">
+            a:link { text-decoration: none;}
+            a:active { text-decoration:blink}
+            a:hover { text-decoration:none;}
+            a:visited { text-decoration: none;}
+    </style>
+    <script>
+        function getData(pageName){
+            var req = new XMLHttpRequest();
+            req.open("GET", "http://127.0.0.1/" + pageName);
+            req.onload = function (){
+                var conti = document.getElementById("background");
+                conti.innerHTML = this.responseText;
+            };
+            req.send();
+        }
+    </script>
+</head>
+<body >
+    <div class= "container" >
+            <div class="jumbotron text-center" style='background-image:url(./photo/cover.jpg);'>
+                <div class="row">
+                    <div class="col-md-4" >
+                        <img src='./photo/myphoto.jpg' class='img-circle' >
+                    </div>
+                    <div class="col-md-4 col-md-offset-1" >
+                        <h3 >Pei Syuan</h3>
+                        <br/>
+                        <p style='font-size:1em;'> Welcome to my blog!</p>
+                     
+                    </div>
+                        
+                </div>
+            </div>
+        <nav class="navbar navbar-default navbar-inverse" role="navigation" style='top:-30px;'>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-center" href="./index2.html">
+                    <i class="fa fa-home fa-2x" aria-hidden="true"> </i>
+                    <span>Home</span></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav ">
+                    
+                    <li><a href="./index2.html"><i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                        <span>Articles</span></a></li>
+                    <li><a href="#" onclick="getData('about.html')"><i class="fa fa-question fa-2x" aria-hidden="true"></i>
+                        <span>About</span></a></li>
+                    <li><a href="https://github.com/lucylinugs258" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                        <span>GitHub</span></a></li>
+                    <li><a href="https://www.facebook.com/peisyuan.lin.39" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        <span>FB</span></a></li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div> 
+        </nav>
+        </div>
+      <div class="container">  
+        <div class="row">            
+            <div class="col-xs-12  col-sm-6 col-md-8 col-lg-10  ">                
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index2.html">Pei-Syuan's Home</a>
+                    </li>
+                    <li class="active">Current</li>
+                </ol>
+                <a name='flag1'>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center" valign="center">
+                    <div id='background' >
+                     <div class="row" id='row' >
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <a href="https://ppt.cc/fzcRix" target='_blank'>
+                                <div class="postShorten-thumbnailimg">
+                                    <img alt=""  src="https://yt3.ggpht.com/-dt7Mk9tbMlk/AAAAAAAAAAI/AAAAAAAAAAA/WuW2WP-Tp7M/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <div class="postShorten-wrap">
+                            <div class="postShorten-header">
+                                <h1 class="postShorten-title" itemprop="headline">林俊傑</h1>
+                            </div>
+                            <div class="postShorten-excerpt" itemprop="articleBody">
+                                <p id >暱稱「JJ」，新加坡籍男歌手、詞曲創作者、音樂製作人。其在2003年4月發表首張個人專輯《樂行者》並正式出道；2004年憑藉歌曲《江南》而成名，並於同年5月8日獲得第15屆金曲獎之「最佳演唱新人獎」；2007年成立音樂製作公司「JFJ Productions」，負......<br>
+                                    <a  href="#" onclick="getData('person1.html');"   >
+                                        Continue reading
+                                    </a>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <a href="https://ppt.cc/fa5gix" target='_blank'>
+                                <div class="postShorten-thumbnailimg">
+                                    <img alt=""  src="https://ppt.cc/fsXPlx">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <div class="postShorten-wrap">
+                            <div class="postShorten-header">
+                                <h1 class="postShorten-title" itemprop="headline">田馥甄</h1>
+                            </div>
+                            <div class="postShorten-excerpt" itemprop="articleBody">
+                                <p>藝名Hebe，為臺灣知名女藝人，女子演唱團體S.H.E組合成員，出生於台灣新竹縣新豐鄉，於2000年參加「宇宙2000實力美少女爭霸戰」選秀活動，並於同年與宇宙唱片（華研唱片前身）簽約培訓後，接著在隔年與Selina、Ella......<br>
+                                    <a href="#" onclick="getData('person2.html');" >
+                                        Continue reading
+                                    </a>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <a href="https://ppt.cc/fXC5Qx " target='_blank'>
+                                <div class="postShorten-thumbnailimg">
+                                    <img alt=""  src="http://i.epochtimes.com/assets/uploads/2017/07/277120.jpg">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <div class="postShorten-wrap">
+                            <div class="postShorten-header">
+                                <h1 class="postShorten-title" itemprop="headline">五月天</h1>
+                            </div>
+                            <div class="postShorten-excerpt" itemprop="articleBody">
+                                <p>臺灣樂團，由主唱阿信、團長暨吉他手怪獸、貝斯手瑪莎、吉他手石頭和鼓手冠佑共五人組成；除冠佑外，其餘四人皆畢業自臺北市國立師大附中。樂團前身為「So Band」樂團，於1997年3月29日改為現名，其名稱取自瑪莎......<br>
+                                    <a href="#" onclick="getData('person3.html');">
+                                        Continue reading
+                                    </a>
+                                </p>
+                            </div>
+                            </div>
+                        </div>   
+                    </div> 
+                    
+                </div>        
+            </div>
+        </div>
+            <div class="col-xs-12  col-sm-12 col-md-12 col-lg-2 ">
+                
+                <div class="panel panel-danger" id ='panel1'>
+                      <div class="panel-heading">
+                            <h3 class="panel-title">溫馨提示 :</h3>
+                      </div>
+                      <div class="panel-body">
+                            <p>有功能: Home, Article, About, GitHub, FB, continue reading<br/>
+                               沒功能: sign up, login, previous, next
+                            </p>
+                      </div>
+                </div>
+                
+                 </div>      
+       </div>
+    </div> 
+    <div class ='container'>
+        <ul class="pager">
+            <li class="previous" ><a href="#">Previous我還沒有功能唷</a></li>
+            <li class="next"><a href="#">Next我還沒有功能唷</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <a name='flag2'/>
+            <footer class="panel  panel-info text-center" >
+                <div class="panel-body" id='footer' >
+                    <p>地址: 你好這是我的blog, 歡迎歡迎~</p>
+                    <p>連絡電話: 我已經不知道要說啥了，就湊點字數吧!</p>
+                </div>
+            </footer>
+    </div>
+    
+</body>
+   
+</html>
